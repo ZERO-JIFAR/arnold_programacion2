@@ -1,10 +1,9 @@
-public class Oficial extends Empleado{
+public class Oficial extends Operario{
     private String departamento;
-    public Oficial() {
-    }
-    public Oficial(String nombre, int nroEmpleado, String departamento){
-        super(nombre, nroEmpleado);
-        this.departamento=departamento;
+
+    public Oficial(String nombre, Float sueldo, String departamento) {
+        super(nombre, sueldo);
+        this.departamento = departamento;
     }
 
     public String getDepartamento(){
@@ -16,6 +15,6 @@ public class Oficial extends Empleado{
     }
 
     public String toString(){
-        return "cc";
+        return "Datos del oficial:\nNombre: " + getNombre() + "\nSueldo: " + getSueldo() + "\nDepartamento: " + getDepartamento();
     }
 }
