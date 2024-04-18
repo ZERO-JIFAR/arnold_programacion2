@@ -1,6 +1,6 @@
-package ejer8;
+package ejer08;
 
-public class Worker {
+public abstract class Worker {
     private String name;
     private int age;
     private float salary;
@@ -43,5 +43,7 @@ public class Worker {
 
     public void setAbility(boolean ability) {
         this.ability = ability;
+    }
+    public void viewprofile (){
     }
 }
