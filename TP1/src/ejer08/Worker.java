@@ -1,49 +1,25 @@
 package ejer08;
 
-public abstract class Worker {
-    private String name;
-    private int age;
-    private float salary;
-    private boolean ability;
+public class Worker extends Employee{
+    private String area;
 
-    public Worker(String name, int age, float salary, boolean ability){
-        this.name=name;
-        this.age=age;
-        this.salary=salary;
-        this.ability=ability;
+    public Worker(String name, int age, float salary, boolean ability, String area) {
+        super(name, age, salary, ability);
+        this.area = area;
     }
 
-    public String getName() {
-        return name;
+    public String getArea() {
+        return area;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setArea(String area) {
+        this.area = area;
     }
-
-    public int getAge() {
-        return age;
+    public void produce(){
+        System.out.println("Produce: " + area);
     }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public float getSalary() {
-        return salary;
-    }
-
-    public void setSalary(float salary) {
-        this.salary = salary;
-    }
-
-    public boolean isAbility() {
-        return ability;
-    }
-
-    public void setAbility(boolean ability) {
-        this.ability = ability;
-    }
-    public void viewprofile (){
+    @Override
+    public void viewProfile(){
+        System.out.println("Nombre: "+ getName() + "\nEdad: "+ getAge() + "\nSalario: "+ getSalary()+"\nArea de trabajo: "+ area);
     }
 }

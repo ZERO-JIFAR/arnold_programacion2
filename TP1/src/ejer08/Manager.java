@@ -1,6 +1,6 @@
 package ejer08;
 
-public class Manager extends Worker {
+public class Manager extends Employee {
     private String department;
 
     public Manager(String name, int age, float salary, boolean ability, String department) {
@@ -15,5 +15,11 @@ public class Manager extends Worker {
     public void setDepartment(String department) {
         this.department = department;
     }
-    public void 
+    public void organizeActivities(){
+        System.out.println("La actividad del departamento de "+ department + " esta organizado por "+ getName());
+    }
+    @Override
+    public void viewProfile(){
+        System.out.println("Nombre: "+ getName() + "\nEdad: "+ getAge() + "\nSalario: "+ getSalary()+"\nDepartamento de trabajo: "+ department);
+    }
 }
