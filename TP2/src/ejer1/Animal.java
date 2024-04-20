@@ -1,23 +1,23 @@
 package ejer1;
 
-public class Animal {
-    private String nombre;
+public abstract class Animal {
+    private String name;
     private int age;
     private String typeAnimal;
     private double price;
-    public Animal(String nombre, int age, String typeAnimal, double price) {
-        this.nombre = nombre;
+    public Animal(String name, int age, String typeAnimal, double price) {
+        this.name = name;
         this.age = age;
         this.typeAnimal = typeAnimal;
         this.price = price;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
@@ -42,5 +42,10 @@ public class Animal {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void feed (String name){}
+    public String toString(){
+        return ("Nombre: "+ getName()  + "\nEdad: "+ getAge() + "\nTipo: "+ getTypeAnimal() + "\nPrecio: "+ getPrice());
     }
 }

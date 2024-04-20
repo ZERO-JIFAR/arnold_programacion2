@@ -1,10 +1,11 @@
 package ejer1;
 
-public class Dog {
+public class Dog extends Animal{
     private String race;
     private boolean vaccinated;
 
-    public Dog(String race, boolean vaccinated) {
+    public Dog(String name, int age, String typeAnimal, double price, String race, boolean vaccinated) {
+        super(name, age, typeAnimal, price);
         this.race = race;
         this.vaccinated = vaccinated;
     }

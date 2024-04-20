@@ -1,10 +1,11 @@
 package ejer1;
 
-public class Fish {
+public class Fish extends Animal{
     private String species;
     private boolean territorial;
 
-    public Fish(String species, boolean territorial) {
+    public Fish(String name, int age, String typeAnimal, double price, String species, boolean territorial) {
+        super(name, age, typeAnimal, price);
         this.species = species;
         this.territorial = territorial;
     }
