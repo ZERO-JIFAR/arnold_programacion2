@@ -46,6 +46,6 @@ public abstract class Animal {
 
     public void feed (String name){}
     public String toString(){
-        return ("Nombre: "+ getName()  + "\nEdad: "+ getAge() + "\nTipo: "+ getTypeAnimal() + "\nPrecio: "+ getPrice());
+        return ("Nombre: "+ getName()  + "\nEdad: "+ getAge() + "\nTipo: "+ getTypeAnimal() + "\nPrecio: "+ getPrice()+ "\n");
     }
 }

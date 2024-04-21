@@ -11,10 +11,9 @@ public class Main {
         shop1.addAnimal(new Fish("Nemo", 21, "Pez", 40.5, "Pez payaso",true));
 
         System.out.println(shop1.getAnimals().get(shop1.searchAnimal("Blazer")).toString());
-        System.out.println("");
         shop1.sellAnimal("Nemo");
         System.out.println("");
-        shop1.feedAnimal("Mulan");
+        shop1.feedAnimal("Mimi");
         System.out.println("");
         shop1.listAnimal();
     }

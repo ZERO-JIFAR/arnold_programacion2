@@ -1,12 +1,12 @@
 package ejer2;
 
-public class Libro {
+public abstract class Book implements Leonable{
     private String title;
     private String author;
     private int yearPublic;
     private boolean borrowed;
 
-    public Libro(String title, String author, int yearPublic, boolean borrowed) {
+    public Book(String title, String author, int yearPublic, boolean borrowed) {
         this.title = title;
         this.author = author;
         this.yearPublic = yearPublic;
@@ -43,5 +43,19 @@ public class Libro {
 
     public void setBorrowed(boolean borrowed) {
         this.borrowed = borrowed;
+    }
+    @Override
+    public String toString() {
+        return "Titulo: "+ title + "\nAutor: "+ author + "\nAño de publicación: " + yearPublic+ "\nPrestado: " + borrowed + "\n";
+    }
+
+    @Override
+    public void lendB() {
+        borrowed = true;
+    }
+
+    @Override
+    public void returnB() {
+        borrowed = false;
     }
 }
