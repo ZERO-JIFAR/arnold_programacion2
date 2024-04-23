@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Player[] players = {
+                new Player("Mesi", "Delantero", 3),
+                new Player("Maradona", "Defensor", 9),
+                new Player("Carlos", "Arquero", 1)};
+        Player equipo1 = new Player(players);
+        for(Player player: players){
+            player.see();
+        }
     }
 }
