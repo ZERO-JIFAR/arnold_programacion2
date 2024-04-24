@@ -1,0 +1,17 @@
+package ejercicios_herencia_19_3.ejer2;
+public class Gato extends Animal{
+    private String pelaje;
+    public Gato(String nombre, int edad, String sexo, String pelaje) {
+        super(nombre, edad, sexo);
+        this.pelaje = pelaje;
+    }
+    public void hacerSonido(){
+        System.out.println("El gato maulla");
+    }
+
+    @Override
+    public void informacion() {
+        super.informacion();
+        System.out.println("Pelaje: "+ pelaje);
+    }
+}

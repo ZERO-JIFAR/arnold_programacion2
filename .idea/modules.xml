@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Clase4-4/Clase4-4.iml" filepath="$PROJECT_DIR$/Clase4-4/Clase4-4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/actividad_en_clase_19_3/actividad_en_clase_19_3.iml" filepath="$PROJECT_DIR$/actividad_en_clase_19_3/actividad_en_clase_19_3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/arnold_programacion2.iml" filepath="$PROJECT_DIR$/.idea/arnold_programacion2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ejercicio_herencia_19-3/ejercicio_herencia_19-3.iml" filepath="$PROJECT_DIR$/ejercicio_herencia_19-3/ejercicio_herencia_19-3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/entrega_ejercicios_herencia1/entrega_ejercicios_herencia1.iml" filepath="$PROJECT_DIR$/entrega_ejercicios_herencia1/entrega_ejercicios_herencia1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/entrega_ejercicios_herencia2/entrega_ejercicios_herencia2.iml" filepath="$PROJECT_DIR$/entrega_ejercicios_herencia2/entrega_ejercicios_herencia2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arnold_programacion2.iml" filepath="$PROJECT_DIR$/arnold_programacion2.iml" />
     </modules>
   </component>
 </project>
